@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-image-viewer';
+  
+  selectedImage  = 'assets/images/1.jpg';
+  coordinates: any;
+  onZoomImage(coordinates: any){
+    console.log(coordinates);
+    this.coordinates = coordinates;
+  }
+
+  onThumbClick(index: string){
+    this.selectedImage = `assets/images/${index}.jpg`;
+  }
 }
