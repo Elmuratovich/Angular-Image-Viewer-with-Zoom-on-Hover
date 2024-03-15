@@ -19,7 +19,5 @@ export class ZoomImageViewerComponent {
     this.renderer.setStyle(this.zoomImage.nativeElement, 'backgroundImage', `url(${url})`);
   }
 
-  constructor(private renderer: Renderer2){
-
-  }
+  constructor(private renderer: Renderer2){ }
 }
